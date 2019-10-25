@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>数据库管理系统</title>
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.page.css">
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/tether.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/sidebarmenu.js"></script>
+    <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="assets/plugins/flot/jquery.flot.js"></script>
+    <script src="assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="js/jquery.page.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/auto_find.js"></script>
+    <style>
+        .check-list {
+            width: 500px;
+            max-width: 500px!important;
+            display: flex;
+            flex-direction: column;
+            line-height: 26px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .first,
+        .last {
+            width: 40px !important;
+        }
+        
+        .td-style td {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 200px;
+        }
+        
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            
+                        </b>
+                        <span>
+                            数据库管理工具
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search p-l-20">
+                                <h3 style="color: white"><b>自动发现</b></h3>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />系统运维部</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 左侧栏 -->
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="index.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>备份还原</a>
+                        </li>
+                        <li>
+                            <a href="ins_instance.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>添加实例</a>
+                        </li>
+                        <li>
+                            <a href="Switch.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>切换镜像</a>
+                        </li>
+                        <li>
+                            <a href="bigdata.html" class="waves-effect"><i class="fa fa-font m-r-10" aria-hidden="true"></i>大数据同步配置</a>
+                        </li>
+                        <li>
+                            <a href="auto_find.html" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>自动发现数据库配置</a>
+                        </li>
+                        <li>
+                            <a href="short_magess.html" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>短信功能管理</a>
+                        </li>
+                        <li>
+                            <a href="partion_table.html" class="waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>分区表管理</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- 内容 -->
+        <div class="page-wrapper">
+            <div style="margin-left: 30px; margin-top: 20px">
+                <form class="form-inline">
+                    <div class="row" style="width: 100%">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputName2">键值</label>
+                                <input type="text" class="form-control" name="key" id="key">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">库名</label>
+                                <input type="text" class="form-control" name="db_name" id="db_name">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">查询间隔/s</label>
+                                <select class="form-control" name="queryTime" id="queryTime">
+                                    <option selected="selected"></option>
+                                    <option>60</option>
+                                    <option>300</option>
+                                    <option>600</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="button" class="btn btn-default" value="查询" onclick="query()">
+                            <button class="btn btn-success" id="add">添加</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div>
+                    <table class="table table-bordered" id="show-tables">
+                        <thead>
+                            <tr>
+                                <td style="width: 15%">键值</td>
+                                <td style="width: 15%">库名</td>
+                                <td style="width: 30%">SQL语句</td>
+                                <td style="width:10%">类型</td>
+                                <td style="width: 10%">间隔时间/s</td>
+                                <td style="width: 20%">描述</td>
+                            </tr>
+                        </thead>
+                        <tbody id="table-content">
+
+                        </tbody>
+
+                    </table>
+                    <div id="page"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-dialog modal-lg" id="addModal" tabindex="-1" role="dialog" style="position: absolute">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">添加</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputName2">键值</label>
+                                    <input type="text" class="form-control key" name="ins_key">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">库名</label>
+                                    <input type="text" class="form-control db_name" name="ins_db_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">SQL语句</label>
+                                    <input type="text" class="form-control sql_message" name="ins_sql_message">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">描述</label>
+                                    <input type="text" class="form-control description" name="ins_description">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">查询间隔/s</label>
+                                    <select class="form-control queryTime" name="ins_queryTime">
+                                        <option>60</option>
+                                        <option>300</option>
+                                        <option>600</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">类型</label>
+                                    <select class="form-control type" name="ins_type">
+                                        <option>int</option>
+                                        <option>str</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+
+                    <button type="button" class="btn btn-primary" onclick="inst()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

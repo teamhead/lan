@@ -1,0 +1,311 @@
+2019-09-03 09:18:27,310 - f:/project/新建文件夹/zabbix_sender.py[line:150] - ERROR: b''
+2019-09-03 09:18:27,328 - f:/project/新建文件夹/zabbix_sender.py[line:151] - ERROR: b"'zabbix_sender' \xb2\xbb\xca\xc7\xc4\xda\xb2\xbf\xbb\xf2\xcd\xe2\xb2\xbf\xc3\xfc\xc1\xee\xa3\xac\xd2\xb2\xb2\xbb\xca\xc7\xbf\xc9\xd4\xcb\xd0\xd0\xb5\xc4\xb3\xcc\xd0\xf2\r\n\xbb\xf2\xc5\xfa\xb4\xa6\xc0\xed\xce\xc4\xbc\xfe\xa1\xa3\r\n"
+2019-09-03 09:19:20,484 - f:/project/新建文件夹/zabbix_sender.py[line:150] - ERROR: b''
+2019-09-03 09:19:20,484 - f:/project/新建文件夹/zabbix_sender.py[line:151] - ERROR: b"'zabbix_sender' \xb2\xbb\xca\xc7\xc4\xda\xb2\xbf\xbb\xf2\xcd\xe2\xb2\xbf\xc3\xfc\xc1\xee\xa3\xac\xd2\xb2\xb2\xbb\xca\xc7\xbf\xc9\xd4\xcb\xd0\xd0\xb5\xc4\xb3\xcc\xd0\xf2\r\n\xbb\xf2\xc5\xfa\xb4\xa6\xc0\xed\xce\xc4\xbc\xfe\xa1\xa3\r\n"
+2019-09-03 09:20:27,644 - f:/project/新建文件夹/zabbix_sender.py[line:150] - ERROR: b''
+2019-09-03 09:20:27,644 - f:/project/新建文件夹/zabbix_sender.py[line:151] - ERROR: b"'zabbix_sender' \xb2\xbb\xca\xc7\xc4\xda\xb2\xbf\xbb\xf2\xcd\xe2\xb2\xbf\xc3\xfc\xc1\xee\xa3\xac\xd2\xb2\xb2\xbb\xca\xc7\xbf\xc9\xd4\xcb\xd0\xd0\xb5\xc4\xb3\xcc\xd0\xf2\r\n\xbb\xf2\xc5\xfa\xb4\xa6\xc0\xed\xce\xc4\xbc\xfe\xa1\xa3\r\n"
+2019-09-03 10:31:09,046 - f:/project/新建文件夹/zabbix_sender.py[line:150] - ERROR: b''
+2019-09-03 10:31:09,046 - f:/project/新建文件夹/zabbix_sender.py[line:151] - ERROR: b"'zabbix_sender' \xb2\xbb\xca\xc7\xc4\xda\xb2\xbf\xbb\xf2\xcd\xe2\xb2\xbf\xc3\xfc\xc1\xee\xa3\xac\xd2\xb2\xb2\xbb\xca\xc7\xbf\xc9\xd4\xcb\xd0\xd0\xb5\xc4\xb3\xcc\xd0\xf2\r\n\xbb\xf2\xc5\xfa\xb4\xa6\xc0\xed\xce\xc4\xbc\xfe\xa1\xa3\r\n"
+2019-09-03 10:31:57,621 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:31:57,622 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:31:57,622 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:33:25,466 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:33:25,467 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:33:25,467 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:34:42,514 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:34:42,515 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 10:34:42,515 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:18:03,132 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:18:03,132 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:18:03,132 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:18:03,137 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:18:03,137 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:18:03,137 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:18:03,137 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:166] - INFO: Scheduler started
+2019-09-03 11:18:06,132 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:06 CST)" (scheduled at 2019-09-03 11:18:06.131740+08:00)
+2019-09-03 11:18:06,621 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:08,135 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:08 CST)" (scheduled at 2019-09-03 11:18:08.132710+08:00)
+2019-09-03 11:18:08,687 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:13 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:09,132 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:09 CST)" (scheduled at 2019-09-03 11:18:09.131740+08:00)
+2019-09-03 11:18:09,133 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:09 CST)" (scheduled at 2019-09-03 11:18:09.132710+08:00)
+2019-09-03 11:18:09,757 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:15 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:09,757 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:12 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:12,135 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:12 CST)" (scheduled at 2019-09-03 11:18:12.131740+08:00)
+2019-09-03 11:18:12,620 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:15 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:13,134 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:13 CST)" (scheduled at 2019-09-03 11:18:13.132710+08:00)
+2019-09-03 11:18:13,653 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:18 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:15,137 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:15 CST)" (scheduled at 2019-09-03 11:18:15.131740+08:00)
+2019-09-03 11:18:15,137 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:15 CST)" (scheduled at 2019-09-03 11:18:15.132710+08:00)
+2019-09-03 11:18:15,691 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:15,691 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:18 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:18,135 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:18 CST)" (scheduled at 2019-09-03 11:18:18.131740+08:00)
+2019-09-03 11:18:18,136 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:18 CST)" (scheduled at 2019-09-03 11:18:18.132710+08:00)
+2019-09-03 11:18:18,709 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:21 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:18,710 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:23 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:21,136 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:24 CST)" (scheduled at 2019-09-03 11:18:21.131740+08:00)
+2019-09-03 11:18:21,136 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:27 CST)" (scheduled at 2019-09-03 11:18:21.132710+08:00)
+2019-09-03 11:18:21,729 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:24 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:21,730 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:27 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:23,134 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:28 CST)" (scheduled at 2019-09-03 11:18:23.132710+08:00)
+2019-09-03 11:18:23,587 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:28 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:24,132 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:27 CST)" (scheduled at 2019-09-03 11:18:24.131740+08:00)
+2019-09-03 11:18:24,743 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:27 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:27,132 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:30 CST)" (scheduled at 2019-09-03 11:18:27.131740+08:00)
+2019-09-03 11:18:27,149 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:33 CST)" (scheduled at 2019-09-03 11:18:27.132710+08:00)
+2019-09-03 11:18:27,653 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:18:30 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:27,653 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:18:33 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:18:28,148 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:33 CST)" (scheduled at 2019-09-03 11:18:28.132710+08:00)
+2019-09-03 11:18:28,742 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:18:33 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    self.my_job(message)
+  File "f:/project/新建文件夹/demo.py", line 144, in my_job
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:27:56,802 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:27:56,802 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:27:56,802 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:27:56,806 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:27:56,806 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:27:56,806 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:27:56,806 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:166] - INFO: Scheduler started
+2019-09-03 11:27:59,803 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:27:59 CST)" (scheduled at 2019-09-03 11:27:59.802695+08:00)
+2019-09-03 11:28:00,333 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:28:02 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:28:01,804 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:28:01 CST)" (scheduled at 2019-09-03 11:28:01.802695+08:00)
+2019-09-03 11:28:02,192 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:28:06 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:28:02,803 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:28:02 CST)" (scheduled at 2019-09-03 11:28:02.802695+08:00)
+2019-09-03 11:28:02,805 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:28:02 CST)" (scheduled at 2019-09-03 11:28:02.802695+08:00)
+2019-09-03 11:28:03,235 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:06], next run at: 2019-09-03 11:28:08 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:28:03,236 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:28:05 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:28:05,806 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:28:05 CST)" (scheduled at 2019-09-03 11:28:05.802695+08:00)
+2019-09-03 11:28:06,286 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:03], next run at: 2019-09-03 11:28:08 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:28:06,804 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:28:06 CST)" (scheduled at 2019-09-03 11:28:06.802695+08:00)
+2019-09-03 11:28:07,305 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:05], next run at: 2019-09-03 11:28:11 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 164, in tick
+    exec_sql = "select sql_content,db_id,monitorkey from zabbix_monitor_config where mon_interval='{0}'".format(mon_interval)
+NameError: name 'mon_interval' is not defined
+2019-09-03 11:30:39,959 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:30:39,959 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:30:39,959 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:30:39,963 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:30:39,964 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:30:39,964 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:30:39,964 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:166] - INFO: Scheduler started
+2019-09-03 11:31:09,961 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:30], next run at: 2019-09-03 11:31:09 CST)" (scheduled at 2019-09-03 11:31:09.959468+08:00)
+2019-09-03 11:31:10,531 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:30], next run at: 2019-09-03 11:31:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:31:29,961 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:50], next run at: 2019-09-03 11:31:29 CST)" (scheduled at 2019-09-03 11:31:29.959468+08:00)
+2019-09-03 11:31:30,530 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:50], next run at: 2019-09-03 11:32:19 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:31:39,961 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:00:30], next run at: 2019-09-03 11:31:39 CST)" (scheduled at 2019-09-03 11:31:39.959468+08:00)
+2019-09-03 11:31:39,962 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:31:39 CST)" (scheduled at 2019-09-03 11:31:39.959468+08:00)
+2019-09-03 11:31:40,545 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:00:30], next run at: 2019-09-03 11:32:09 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:31:40,579 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:32:39 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:33:45,210 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:33:45,210 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:33:45,210 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:440] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-09-03 11:33:45,213 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:33:45,213 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:33:45,214 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:881] - INFO: Added job "CreateTask.tick" to job store "default"
+2019-09-03 11:33:45,214 - D:\python\lib\site-packages\apscheduler\schedulers\base.py[line:166] - INFO: Scheduler started
+2019-09-03 11:34:45,211 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:34:45 CST)" (scheduled at 2019-09-03 11:34:45.210169+08:00)
+2019-09-03 11:34:45,758 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:35:45 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2019-09-03 11:35:45,211 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:123] - INFO: Running job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:35:45 CST)" (scheduled at 2019-09-03 11:35:45.210169+08:00)
+2019-09-03 11:35:45,794 - D:\python\lib\site-packages\apscheduler\executors\base.py[line:131] - ERROR: Job "CreateTask.tick (trigger: interval[0:01:00], next run at: 2019-09-03 11:36:45 CST)" raised an exception
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "f:/project/新建文件夹/demo.py", line 188, in tick
+    send_data_file.write(message.decode())
+AttributeError: 'str' object has no attribute 'decode'

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>数据库管理系统</title>
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/tether.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/sidebarmenu.js"></script>
+    <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="assets/plugins/flot/jquery.flot.js"></script>
+    <script src="assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .check-list {
+            width: 500px;
+            max-width: 500px!important;
+            display: flex;
+            flex-direction: column;
+            line-height: 26px;
+        }
+    </style>
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            
+                        </b>
+                        <span>
+                            <!-- <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
+                            数据库管理工具
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search p-l-20">
+                                <h3 style="color: white"><b>备份还原</b></h3>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />系统运维部</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 左侧栏 -->
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="index.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>备份还原</a>
+                        </li>
+                        <li>
+                            <a href="ins_instance.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>添加实例</a>
+                        </li>
+                        <li>
+                            <a href="Switch.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>切换镜像</a>
+                        </li>
+                        <li>
+                            <a href="bigdata.html" class="waves-effect"><i class="fa fa-font m-r-10" aria-hidden="true"></i>大数据同步配置</a>
+                        </li>
+                        <li>
+                            <a href="auto_find.html" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>自动发现数据库配置</a>
+                        </li>
+                        <li>
+                            <a href="short_magess.html" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>短信功能管理</a>
+                        </li>
+                        <li>
+                            <a href="partion_table.html" class="waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>分区表管理</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- 内容 -->
+        <div class="page-wrapper">
+            <div>
+                <form style="margin-left: 30px; margin-top: 20px">
+                    <ul>
+                        <li style="list-style-type: none;">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">操作类型</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" name="OperType" id="OperType">
+                                                <!-- <option>创建目录</option> -->
+                                                <option>备份</option>
+                                                <option>还原</option>
+                                                <option>创建账户</option>
+                                            </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">实例名</label>
+                                <div class="col-sm-6">
+                                    <select id="instance_name" class="form-control instance_name" name="instance_name">
+                                            <option style='display: none'></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">数据库</label>
+                                <div class="col-sm-6">
+                                    <label class="text-center"></label>
+                                    <span style="margin-left: 30px"><input type="checkbox" id="selectAll"> 全选 </span>
+                                    <span><input type="checkbox" id="deSelect"> 反选</span>
+                                    <div id="db_name" style="height: 200px; overflow-y: scroll">
+                                        <div class="row" id='db_name'>
+                                            <div class="col-md-4 check-list" id="db_show_name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="form-group row BackUp">
+                            <label class="col-sm-1 text-center" style="position: relative;top: 8px">备份路径</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="BKFileUrl" />
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">目标数据库KEY</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="BKDBKey" />
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore_createUser">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">目标实例名</label>
+                                <div class="col-sm-6">
+                                    <select id="instance_name_store" class="form-control instance_name" name="instance_name_store">
+                                            <option style='display: none'></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li style="list-style-type: none;" class="BackUp" class="BackUp">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">备份类型</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" name="BKMode">
+                                        <option>全备</option>
+                                        <option>差异</option>
+                                        <option>日志</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">还原类型</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" name="RSMode">
+                                        <option>全备</option>
+                                        <option>差异</option>
+                                        <option>日志</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">还原模式</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" name="RSOper">
+                                        <option>完全还原</option>
+                                        <option>不完全还原</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">目标数据备份路径</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="inputPassword" name="RSFileUrl">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">还原数据文件路径</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="inputPassword" name="DBFileUrl">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="Restore">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">还原日志文件路径</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="inputPassword" name="LogFileUrl">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="userWork">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">登陆名</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="inputPassword" name="UserName">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="userWork">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">密码</label>
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="inputPassword" name="PassWD">
+                                </div>
+                            </div>
+                        </li>
+                        <li style="list-style-type: none;" class="userWork">
+                            <div class="form-group row">
+                                <label class="col-sm-1 text-center" style="position: relative;top: 8px">权限操作</label>
+                                <div class="col-sm-6">
+                                    <select name="OperMode" class="form-control">
+                                        <option>处理孤立用户</option>
+                                        <option>新建用户授权</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="form-group Restore_createUser">
+                            <textarea type="text" id="show-sql" style="width:300px;height:300px;" class="form-control" name="show-sql"></textarea>
+                            <input class="btn btn-default Restore_createUser" type="button" onclick="GetSql()" value="执行检测">
+                        </div>
+
+                        <input class="btn btn-default " type="button" value="提交" onclick="back_submit()">
+                        <span id="back_status"></span>
+                    </ul>
+                </form>
+                </input>
+            </div>
+        </div>
+</body>
+
+</html>

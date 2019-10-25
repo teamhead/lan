@@ -1,0 +1,11 @@
+{% extends 'index.html' %} {% block text %}
+<form action="/insert_instance" method="POST">
+    <span>实例名<input type="text" name="easname"></span>
+    <span>IP地址<input type="text" name="ipaddr"></span>
+    <span>端口号<input type="text" name="db_port"></span>
+    <span>账号<input type="text" name="username"></span>
+    <span>密码<input type="text" name="passwd"></span>
+    <span>创建人<input type="text" name="creator"></span>
+    <span><input type="submit" value="添加"></span>
+</form>
+{% endblock %}

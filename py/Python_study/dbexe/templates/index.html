@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/images/favicon.png">
+    <title>数据库管理平台</title>
+    <link href="../static/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/colors/blue.css" id="theme" rel="stylesheet">
+    <script src="../static/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="../static/assets/plugins/bootstrap/js/tether.min.js"></script>
+    <script src="../static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.slimscroll.js"></script>
+    <script src="../static/js/waves.js"></script>
+    <script src="../static/js/sidebarmenu.js"></script>
+    <script src="../static/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../static/js/custom.min.js"></script>
+    <script src="../static/assets/plugins/flot/jquery.flot.js"></script>
+    <script src="../static/assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/js/flot-data.js"></script>
+    <script src="../static/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="../static/js/index.js"></script>
+    <style>
+        li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <b>
+                            <img src="../static/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            
+                        </b>
+                        <span>
+                            数据库管理平台
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)">
+                                <i class="ti-menu"></i>
+                            </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="/" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>备份还原</a>
+                        </li>
+                        <li>
+                            <a href="/faildb" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>切换镜像</a>
+                        </li>
+                        <li>
+                            <a href="/bigdata" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>大数据同步配置</a>
+                        </li>
+                        <li>
+                            <a href="/autodiscovery" class="waves-effect"><i class="fa fa-font m-r-10" aria-hidden="true"></i>自动发现数据库配置</a>
+                        </li>
+                        <li>
+                            <a href="/message" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>短信功能管理</a>
+                        </li>
+                        <li>
+                            <a href="./table" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>分区表管理</a>
+                        </li>
+                        <li>
+                            <a href="./insert_instance" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>添加实例</a>
+                        </li>
+                        <li>
+                            <a href="./insert_db" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>同步数据库</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                {% block text %}
+                <form action="" method="POST">
+                    <div class="input">
+                        <ul>
+                            <div>
+                                <li>
+                                 <div class="form-group row">
+                                    <label class="col-sm-1 text-center" style="position: relative;top: 8px">实例名</label>
+                                    <div class="col-sm-6">
+                                       <select id="instance_name" class="form-control" name="instance_name">
+                                        {% for inst in insts %}
+                                            <option db={{ inst.instance_id }} value={{ inst.instance_id }}>{{ inst.instance_name }}</option>
+                                        {% endfor %}
+                                        </select>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                    <label class="text-center">数据库</label> <span style="margin-left: 30px"><input type="checkbox" id="selectAll"> 全选 </span>
+                                    <span><input type="checkbox" id="deSelect"> 反选</span>
+                                    <div id="db_name" style="height: 300px; overflow-y: scroll">
+                                        <div class="row">
+                                             {% for db in dbs %}
+                                            <div class="col-md-4">
+                                                <input type="checkbox" value={{ db.db_name }} name="db_name"> {{ db.db_name }}
+                                            </div>
+                                             {% endfor %}
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+{#                            <li>#}
+{#                                <div class="form-group row">#}
+{#                                    <label for="return_value" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">return_value</label>#}
+{#                                    <div class="col-sm-5">#}
+{#                                      <input type="text" class="form-control" id="inputPassword" placeholder="" name="return_value">#}
+{#                                    </div>#}
+{#                                  </div>#}
+{#                            </li>#}
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">BKFileUrl</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control" id="inputPassword" placeholder="" name="BKFileUrl">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">BKDBKey</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control" id="inputPassword" name="BKDBKey">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">OperType</label>
+                                    <div class="col-sm-5">
+                                      <select name="OperType">
+                                          <option>MD:创建目录</option>
+                                          <option>BK:备份</option>
+                                          <option>RS:还原</option>
+                                          <option>CU:创建账户</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">BKMode</label>
+                                    <div class="col-sm-5">
+                                      <select name="BKMode">
+                                          <option>0:全备</option>
+                                          <option>1:差异</option>
+                                          <option>2:日志</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">RSMode</label>
+                                    <div class="col-sm-5">
+                                      <select name="RSMode">
+                                          <option>0:全备</option>
+                                          <option>1:差异</option>
+                                          <option>2:日志</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">RSOper</label>
+                                    <div class="col-sm-5">
+                                      <select name="RSOper">
+                                          <option>0:完全还原</option>
+                                          <option>1:不完全还原</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">DBFileUrl</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control" id="inputPassword" name="DBFileUrl">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">LogFileUrl</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control" id="inputPassword" name="LogFileUrl">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">UserName</label>
+                                    <div class="col-sm-5">
+                                      <input type="text" class="form-control" id="inputPassword" name="UserName">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">PassWD</label>
+                                    <div class="col-sm-5">
+                                      <input type="password" class="form-control" id="inputPassword" name="PassWD">
+                                    </div>
+                                  </div>
+                            </li>
+                            <li>
+                                 <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 control-label text-center" style="position: relative; top: 8px">OperMode</label>
+                                    <div class="col-sm-5">
+                                      <select name="OperMode">
+                                          <option>0:处理孤立用户</option>
+                                          <option>1:新建用户授权</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                            </li>
+
+                        </ul>
+                        <input type="submit" value="提交">
+                    </div>
+                </form>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

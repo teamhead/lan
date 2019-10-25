@@ -1,0 +1,33 @@
+{% extends 'index.html' %} {% block text %}
+    <form action="/insert_db" method="post">
+        <select name = 'instance'>
+        {% for plan in info %}
+            <option>
+                {{ plan.instance_name }}
+            </option>
+        {% endfor %}
+            <input type="submit" id="submit" value="提交">
+        </select>
+    </form>
+{#<script>#}
+{#   $(function () {#}
+{##}
+{##}
+{#        $("#submit").click(function (e) {#}
+{##}
+{#            e.preventDefault();#}
+{#            $.ajax({#}
+{#                type: "post",#}
+{#                url: "insert_db",#}
+{#                success: function (val) {#}
+{#                    alert(val);#}
+{#                },#}
+{#                dataType: "text",#}
+{#                error: function (val) {#}
+{#                    alert(val)#}
+{#                }#}
+{#            })#}
+{#        })#}
+{#    })#}
+{#</script>#}
+{% endblock %}
